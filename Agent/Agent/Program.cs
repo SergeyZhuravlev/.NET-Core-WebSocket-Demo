@@ -5,7 +5,7 @@ using System.Net.WebSockets;
 using System.Text;
 using System.Threading;
 
-namespace TaxcomAgent2
+namespace Agent
 {
     class Program
     {
@@ -27,7 +27,7 @@ namespace TaxcomAgent2
 
         static async System.Threading.Tasks.Task Main(string[] args)
         {
-            Console.WriteLine("TaxcomAgent2");
+            Console.WriteLine("Agent");
             HttpListener httpListener = new HttpListener();
             httpListener.Prefixes.Add("http://localhost:4500/");
             httpListener.Start();
